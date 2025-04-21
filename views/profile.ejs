@@ -10,6 +10,18 @@
     <h2>name:- <%= user.name%></h2>
     <h4>email:- <%= user.email%></h4>
     <h4>city<%= user.city%></h4>
-    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem totam quae natus numquam animi enim praesentium facilis suscipit ea. Omnis?</span>
+    <ul>        
+        <% user.skill.forEach((item)=>{ %>
+            <li><%= item%></li>
+        <% }) %>
+    </ul>
+ 
+
+ 
+    <span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem totam quae natus numquam animi enim praesentium facilis suscipit ea. 
+        Omnis?
+    </span>
 </body>
 </html>
