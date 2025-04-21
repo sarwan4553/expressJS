@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+
 //get provide the routes
 app.get("", (req, res) => {
   // ex.:-http://localhost:5000/?name=sarwan

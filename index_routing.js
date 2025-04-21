@@ -1,4 +1,5 @@
 // routing remove the extention of the your file in url
+
 const express=require('express');
 const app=express();
 // need current application patyh

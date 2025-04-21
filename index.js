@@ -27,6 +27,7 @@ app.get('/aboutme', (req,res)=>{
 app.get('/helpme', (req,res)=>{
     res.sendFile(`${publicPath}/help.html`)
 })
+
 // app.get('*',(_,resp)=>{
 //     resp.sendFile()
 // })
