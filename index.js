@@ -1,4 +1,4 @@
-// routing remove the extention of the your file in url
+// dynamic page data load for help of ejs
 const express=require('express');
 const app=express();
 // need current application patyh
@@ -19,7 +19,12 @@ app.get('', (req,res)=>{
     res.sendFile(`${publicPath}/index.html`)
 })
 app.get('/profile', (_,resp)=>{
-    resp.render('profile')
+    const user={
+        name:"sarwan",
+        email:"sarwan@gmail.com",
+        city:'faridabad'
+    }
+    resp.render('profile',{user})
 })
 app.get('/aboutme', (req,res)=>{
     res.sendFile(`${publicPath}/about.html`)
